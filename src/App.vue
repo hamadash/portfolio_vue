@@ -20,3 +20,14 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+.content-title {
+  color: #364e96;
+  text-align: center;
+  padding: 0.5em 0;
+  border-top: solid 3px #364e96;
+  border-bottom: solid 3px #364e96;
+  margin-bottom: 10px;
+}
+</style>
