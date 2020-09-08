@@ -1,21 +1,20 @@
 <template>
-  <section class="hero">
-    <v-container fluid fill-height class="hero__content">
-      <v-row>
-        <v-col class="hero__content-text">
-          <p>Welcome to my website.</p>
-          <p>I'm a Web Developer.</p>
-          <a
-            href="https://github.com/shhmd92"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <font-awesome-icon :icon="['fab', 'github-square']" />
-          </a>
-        </v-col>
-      </v-row>
-    </v-container>
-  </section>
+  <v-container fluid fill-height class="hero__content">
+    <v-row>
+      <v-col class="hero__content-text">
+        <p>Welcome to my website.</p>
+        <p>I'm a Web Developer.</p>
+        <a
+          href="https://github.com/shhmd92"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="github-icon"
+        >
+          <font-awesome-icon :icon="['fab', 'github-square']" />
+        </a>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
@@ -25,7 +24,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-a {
+.github-icon {
   color: white;
 }
 
@@ -34,10 +33,10 @@ a {
   background-size: cover;
   background-position: center center;
   width: 100%;
-  height: 50vh;
+  height: 90vh;
 
   @include display_pc {
-    height: 100vh;
+    height: 90vh;
   }
 
   &-text {
